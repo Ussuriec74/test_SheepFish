@@ -22,7 +22,7 @@ export const Header = styled.header`
   align-items: center;
   width: 100%;
   min-height: ${p => p.theme.space[7]}px;
-  background-color: ${p => p.theme.colors.white};
+  background-color: ${p => p.theme.colors.bgColor};
 `;
 
 export const Title = styled.h1`
