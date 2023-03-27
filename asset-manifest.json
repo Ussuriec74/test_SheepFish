@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/test_SheepFish/static/css/main.7acaea2f.css",
-    "main.js": "/test_SheepFish/static/js/main.07d3183d.js",
-    "index.html": "/test_SheepFish/index.html",
-    "main.7acaea2f.css.map": "/test_SheepFish/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/test_SheepFish/static/js/main.07d3183d.js.map"
+    "main.css": "/test_sheepfish/static/css/main.7acaea2f.css",
+    "main.js": "/test_sheepfish/static/js/main.271b8183.js",
+    "static/js/266.b0fd45a6.chunk.js": "/test_sheepfish/static/js/266.b0fd45a6.chunk.js",
+    "static/js/852.79162bab.chunk.js": "/test_sheepfish/static/js/852.79162bab.chunk.js",
+    "static/js/878.ca742249.chunk.js": "/test_sheepfish/static/js/878.ca742249.chunk.js",
+    "static/js/538.be190005.chunk.js": "/test_sheepfish/static/js/538.be190005.chunk.js",
+    "index.html": "/test_sheepfish/index.html",
+    "main.7acaea2f.css.map": "/test_sheepfish/static/css/main.7acaea2f.css.map",
+    "main.271b8183.js.map": "/test_sheepfish/static/js/main.271b8183.js.map",
+    "266.b0fd45a6.chunk.js.map": "/test_sheepfish/static/js/266.b0fd45a6.chunk.js.map",
+    "852.79162bab.chunk.js.map": "/test_sheepfish/static/js/852.79162bab.chunk.js.map",
+    "878.ca742249.chunk.js.map": "/test_sheepfish/static/js/878.ca742249.chunk.js.map",
+    "538.be190005.chunk.js.map": "/test_sheepfish/static/js/538.be190005.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.271b8183.js"
   ]
 }
