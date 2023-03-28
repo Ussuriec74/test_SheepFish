@@ -2,11 +2,10 @@ import { MdDelete } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
 import { deleteProduct } from 'redux/products/operations';
 import { DeleteBtn } from 'components/ProductsListItem/ProductsListItem.styled'
-import { Box } from 'components/Box';
 
 export const ProductsListItem = ({
   id,
-  name,
+  title,
   description,
   price,
   photo,
@@ -18,20 +17,23 @@ export const ProductsListItem = ({
   const handleDelete = () => dispatch(deleteProduct(id))
  
   return (
-    <Box>
+    <tbody>
       <tr>
         <td>{id}</td>
-        <td>{name}</td>
+        <td>{title}</td>
         <td>{description}</td>
         <td>{price}</td>
         <td>{photo}</td>
         <td>{rating}</td>
         <td>{stock}</td>
         <td>{category}</td>
+        <td>
+          <DeleteBtn onClick={handleDelete}>
+            <MdDelete />
+          </DeleteBtn>
+        </td>
       </tr>
-      <DeleteBtn onClick={handleDelete}>
-        <MdDelete />
-      </DeleteBtn>
-    </Box>
+
+    </tbody>
   );
 }
