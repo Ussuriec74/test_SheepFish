@@ -8,13 +8,14 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import { productsReducer } from './products/productsSlice';
-
+import { productsReducer } from './productsSlice';
+import { filtersReducer } from './filtersSlise';
 
 
 export const store = configureStore({
   reducer: {
     products: productsReducer,
+    filters: filtersReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

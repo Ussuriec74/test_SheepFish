@@ -1,20 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
 
-export const Container = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 ${p => p.theme.space[4]}px;
-
-  @media (min-width: ${p => p.theme.space[11]}px) {
-    width: ${p => p.theme.space[11]}px;
-    padding: 0 ${p => p.theme.space[6]}px;
-  }
-  @media (min-width: ${p => p.theme.space[12]}px) {
-    width: ${p => p.theme.space[12]}px;
-    padding: 0 ${p => p.theme.space[7]}px;;
-  }
-`;
 
 export const Header = styled.header`
   display: flex;

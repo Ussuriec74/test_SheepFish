@@ -18,7 +18,7 @@ export const ButtonStyled = styled.button`
   text-align: center;
   font-family: ${p => p.theme.fonts.body};
 
-  &:hover, &:focus, &:active {
+  &:hover, &:focus, &:active, &.isSelected {
     background-color: ${p => p.theme.colors.btnHoverColor};
   }
 `;

@@ -1,6 +1,6 @@
 import { MdDelete } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
-import { deleteProduct } from 'redux/products/operations';
+import { deleteProduct } from 'redux/operations';
 import { DeleteBtn } from 'components/ProductsListItem/ProductsListItem.styled'
 
 export const ProductsListItem = ({

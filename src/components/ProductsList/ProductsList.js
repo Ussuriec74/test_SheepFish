@@ -1,20 +1,19 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectProducts, selectFilter } from "redux/products/selectors";
+import { selectProducts, selectStatusFilter } from "redux/selectors";
 import { ProductsListItem } from 'components/ProductsListItem/ProductsListItem';
 
 
 export const ProductsList = () => {
   const items = useSelector(selectProducts);
-  // const filter = useSelector(selectFilter);
+  const filter = useSelector(selectStatusFilter);
+  
+  const sortedProducts = [...items];
+  sortedProducts.sort((x, y) => {
+    return x[filter] - y[filter]
+  });
 
-  // const getFilteredProducts = (items, filter) => {
     
-  //   return items.filter(product =>
-  //     product.name.toLowerCase().includes(filter.toLowerCase()));
-  // }
-
-  // const filteredProducts = getFilteredProducts(items, filter);  
   
 
   return (
@@ -32,7 +31,7 @@ export const ProductsList = () => {
           <th></th>
         </tr>
       </thead>
-      {items.map(({ id, title, description, price, photo, rating, stock, category }) => (
+      {sortedProducts.map(({ id, title, description, price, photo, rating, stock, category }) => (
         <ProductsListItem
           key={id}
           id={id}

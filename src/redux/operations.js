@@ -29,9 +29,15 @@ export const deleteProduct = createAsyncThunk(
   "products/deleteProduct",
   async (productId, thunkAPI) => {
     try {
-      return products.filter(product => product.id !== productId);
+      products.filter(product => product.id !== productId);
+      return productId;
     } catch (err) {
       return thunkAPI.rejectWithValue(err.message);
     }
   }
 );
+
+// export const changeFilterStatus = createAsyncThunk(
+//   "products/changeFilterStatus",
+//   async 
+// )

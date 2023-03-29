@@ -1,7 +1,7 @@
 import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Routes, Route } from "react-router-dom";
-import { getProducts } from "redux/products/operations";
+import { getProducts } from "redux/operations";
 import { SharedLayout } from "./SharedLayout/SharedLayout";
 
 const Home = lazy(() => import("../pages/Home"));
@@ -19,7 +19,7 @@ export const App = () => {
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<Home />} />
         <Route path="products" element={<Products />} />
-        <Route path="register" element={<AddProductForm />} />
+        <Route path="addproduct" element={<AddProductForm />} />
       </Route>
     </Routes>
   );
