@@ -10,8 +10,13 @@ export const ProductsList = () => {
   
   const sortedProducts = [...items];
   sortedProducts.sort((x, y) => {
-    return x[filter] - y[filter]
+    if (typeof (x[filter]) === "string") {
+      return x[filter].localeCompare(y[filter]);
+    }
+    return x[filter] - y[filter];
   });
+
+
 
     
   
