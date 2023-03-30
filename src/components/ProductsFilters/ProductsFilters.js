@@ -4,6 +4,9 @@ import { statusFilters } from "redux/constants";
 import { selectStatusFilter } from "redux/selectors";
 import { setStatusFilter } from "redux/filtersSlise";
 import { Box } from "components/Box";
+import { Filter } from "components/Filter/Filter";
+
+
 
 export const ProductsFilters = () => {
   const dispatch = useDispatch();
@@ -12,7 +15,9 @@ export const ProductsFilters = () => {
   const handleFilterChange = filter => dispatch(setStatusFilter(filter));
 
   return (
-    <Box display="flex" flexDirection="column" gridGap={5}>
+    <Box display="flex" flexDirection="column" gridGap={3}>
+      <Filter />
+      <h3>Сортувати за:</h3>
       <Button
         selected={filter === statusFilters.id}
         onClick={() => handleFilterChange(statusFilters.id)}

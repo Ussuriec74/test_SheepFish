@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
   cursor: pointer;
-  height: ${p => p.theme.space[6]};
+  height: ${p => p.theme.space[4]};
   min-width: ${p => p.theme.space[13]};
   padding: ${p => p.theme.space[2]}px ${p => p.theme.space[5]}px;
   border: none;

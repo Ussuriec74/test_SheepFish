@@ -6,6 +6,7 @@ import { SharedLayout } from "./SharedLayout/SharedLayout";
 
 const Home = lazy(() => import("../pages/Home"));
 const Products = lazy(() => import("../pages/Products"));
+const ProductDetailsPage = lazy(() => import("../pages/ProductDetailsPage"));
 const AddProductForm = lazy(() => import("../pages/AddProductForm"));
 
 export const App = () => {
@@ -19,6 +20,7 @@ export const App = () => {
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<Home />} />
         <Route path="products" element={<Products />} />
+        <Route path='products/:productId' element={<ProductDetailsPage />} ></Route>
         <Route path="addproduct" element={<AddProductForm />} />
       </Route>
     </Routes>
