@@ -7,7 +7,7 @@ const AddProductPage = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      bgcolor="azure"
+      backgroundColor="azure"
     >
       <h1>Please fill in the following fields.</h1>
       <AddProductForm />

@@ -1,12 +1,16 @@
-import { Container } from "components/Container";
+import { Box } from "components/Box";
+import { Hero } from "components/Hero/Hero";
 
 const Home = () => {
   return (
-    <main>
-      <Container>
-        <h1>Home page</h1>
-      </Container>
-    </main>
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      backgroundColor="azure"
+      >
+        <Hero />
+    </Box>
   );
 };
 

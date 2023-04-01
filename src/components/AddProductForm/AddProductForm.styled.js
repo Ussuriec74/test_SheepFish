@@ -11,7 +11,7 @@ export const FormWrapper = styled(Form)`
   width: ${p => p.theme.space[11]}px;
   border: ${p => p.theme.borders.normal} black;
   border-radius: ${p => p.theme.radii.normal};
-  background-color: ${p => p.theme.colors.bgColor};
+  background-color: inherit;
 `;
 
 export const FormLabel = styled.label`
