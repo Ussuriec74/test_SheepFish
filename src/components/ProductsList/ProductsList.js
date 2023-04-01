@@ -34,13 +34,13 @@ export const ProductsList = () => {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Назва</th>
-            <th>Опис</th>
-            <th>Ціна</th>
-            <th>Фото</th>
-            <th>Рейтинг</th>
-            <th>Сток</th>
-            <th>Категорія</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Photo</th>
+            <th>Rating</th>
+            <th>Stock</th>
+            <th>Category</th>
             <th></th>
           </tr>
         </thead>

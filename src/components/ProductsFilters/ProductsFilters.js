@@ -19,7 +19,7 @@ export const ProductsFilters = () => {
       gridGap={3}
     >
       <Filter />
-      <h3>Сортувати за:</h3>
+      <h3>Sort by:</h3>
       <Button
         selected={filter === statusFilters.id}
         onClick={() => handleFilterChange(statusFilters.id)}
