@@ -6,8 +6,6 @@ import { setStatusFilter } from "redux/filtersSlise";
 import { Box } from "components/Box";
 import { Filter } from "components/Filter/Filter";
 
-
-
 export const ProductsFilters = () => {
   const dispatch = useDispatch();
   const filter = useSelector(selectStatusFilter);
@@ -20,7 +18,6 @@ export const ProductsFilters = () => {
       flexDirection="column"
       gridGap={3}
     >
-      
       <Filter />
       <h3>Сортувати за:</h3>
       <Button

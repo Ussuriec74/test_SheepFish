@@ -24,11 +24,9 @@ export const ProductsList = () => {
    
       return String(product[statusFilter]).toLowerCase().includes(filter.toLowerCase())
     });
-    
-  }
+  };
 
   const filteredProducts = getFilteredProducts(sortedProducts, filter);
- 
 
   return (
     <Box>
