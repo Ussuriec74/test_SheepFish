@@ -1,4 +1,3 @@
-import { buttonStyle } from "styled-system";
 import { ButtonStyled } from "./Button.styled";
 
 export const Button = ({
