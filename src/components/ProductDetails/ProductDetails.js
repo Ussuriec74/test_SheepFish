@@ -5,6 +5,7 @@ import { BiArrowBack } from "react-icons/bi";
 import { useLocation, useParams } from "react-router-dom";
 
 import { Box } from "components/Box";
+import { ProductImages } from "components/ProductImages/ProductImages";
 import { GoBackBtn, DetailsTitle, DetailsDescription } from "./ProductDetails.styled";
 
 
@@ -16,8 +17,8 @@ export const ProductDetails = () => {
   const location = useLocation();
 
   const backLink = location.state?.from ?? "/";
-  const idx = items.findIndex(item => item.id === Number(productId));
-  const { title, description, images } = items[idx];
+  const product = items.find(item => item.id === Number(productId));
+  const { title, description, images } = product;
   
   return (
     <Box>
@@ -26,7 +27,7 @@ export const ProductDetails = () => {
       </GoBackBtn>
       <DetailsTitle >{title}</DetailsTitle>
       <DetailsDescription>{description}</DetailsDescription>
-
+      <ProductImages images={images} id={productId} title={title} />
     </Box>
   )
 }

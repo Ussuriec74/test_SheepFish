@@ -3,13 +3,16 @@ import { NavLink } from "react-router-dom";
 
 
 export const Header = styled.header`
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: ${p => p.theme.space[7]}px;
-  width: 100%;
-  min-height: ${p => p.theme.space[7]}px;
-  background-color: ${p => p.theme.colors.bgColor};
+  min-height: ${p => p.theme.space[6]}px;
+  padding: ${p => p.theme.space[3]}px ${p => p.theme.space[6]}px;
+  background-color: ${p => p.theme.colors.accentColor};
 `;
 
 export const Title = styled.h1`
@@ -18,11 +21,11 @@ export const Title = styled.h1`
 `;
 
 export const Link = styled(NavLink)`
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: ${p => p.theme.space[3]}px ${p => p.theme.space[4]}px;
   text-decoration: none;
-  color: black;
+  color: ${p => p.theme.colors.primaryDarkText};
   font-weight: 500;
+  font-size: ${p => p.theme.fontSizes.l};
 
   &.active {
     color: white;

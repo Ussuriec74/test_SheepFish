@@ -15,7 +15,12 @@ export const ProductsFilters = () => {
   const handleFilterChange = filter => dispatch(setStatusFilter(filter));
 
   return (
-    <Box display="flex" flexDirection="column" gridGap={3}>
+    <Box
+      display="flex"
+      flexDirection="column"
+      gridGap={3}
+    >
+      
       <Filter />
       <h3>Сортувати за:</h3>
       <Button

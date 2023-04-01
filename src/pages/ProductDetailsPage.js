@@ -5,7 +5,7 @@ import { ProductDetails } from "components/ProductDetails/ProductDetails";
 const ProductDetailsPage = () => {
   return (
     <Container>
-      <Box>
+      <Box p={6} backgroundColor="azure">
         <ProductDetails />
       </Box>
     </Container>

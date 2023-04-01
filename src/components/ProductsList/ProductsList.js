@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { selectProducts, selectStatusFilter, selectFilter } from "redux/selectors";
 import { ProductsListItem } from 'components/ProductsListItem/ProductsListItem';
 import { Box } from "components/Box";
+import { ProductTable } from "./ProductsList.styled";
 
 
 export const ProductsList = () => {
@@ -17,10 +18,13 @@ export const ProductsList = () => {
     }
     return x[statusFilter] - y[statusFilter];
   });
-
+  
   const getFilteredProducts = (items, filter) => {
-    return items.filter(product =>
-      product.description.toLowerCase().includes(filter.toLowerCase()));
+    return items.filter((product) => {
+   
+      return String(product[statusFilter]).toLowerCase().includes(filter.toLowerCase())
+    });
+    
   }
 
   const filteredProducts = getFilteredProducts(sortedProducts, filter);
@@ -28,7 +32,7 @@ export const ProductsList = () => {
 
   return (
     <Box>
-      <table>
+      <ProductTable>
         <thead>
           <tr>
             <th>ID</th>
@@ -54,7 +58,7 @@ export const ProductsList = () => {
             stock={stock}
             category={category} />
         ))}
-      </table>
+      </ProductTable>
     </Box>
   );
 };

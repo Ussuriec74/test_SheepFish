@@ -6,7 +6,13 @@ import { Container } from "components/Container";
 const Products = () => {
   return (
     <Container>
-      <Box display="flex" gridGap={5}>
+      <Box
+        display="flex"
+        gridGap={7}
+        width="1136px"
+        p={6}
+        backgroundColor="azure"
+      >
         <ProductsFilters />
         <ProductsList />
       </Box>
